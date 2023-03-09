@@ -1,0 +1,92 @@
+<!-- 2023/03/09 목요일 HTML&CSS Day3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- button 태그 : 새롭게 추가된 요소이며, 기존의 input에서 type속성으로 구현하는 버튼을 대체 할 수 있음 -->
+    <!-- !!submit : 폼을 서버로 전송 / reset: 폼에 입력한 내용 초기화 / button : 기능없이 형태만 -->
+    <b>button tag</b> : submit / reset / button<br>
+    <form action="#">
+        <!-- input tag를 이용해서 버튼을 만드는 방식 -->
+        <input type="submit" value="등록">
+        <!-- button type을 이용해서 버튼을 만드는 방식. 열림/닫힘이 있어서 이미지나 텍스트 넣기 가능 -->
+        <button type="submit">
+            <img src="/images/punchbear.png" alt="punchbear" width="40px" height="40px">
+            등록하기
+        </button>
+    </form>
+<br>
+<hr>
+<br>
+    <b>readonly</b> : 창은 활성화 되어있지만, 값은 입력 불가능 <br>
+    <label for="name">이름</label>
+    <input type="text" id="name" readonly>
+    <br>
+    <label for="tel">전화번호</label>
+    <input type="tel" id="tel" readonly>
+    <br>
+<br>
+<hr>
+<br>
+    <!-- 예) 회원가입 시 필드가 비워져있으면 확인 버튼을 누를 수 없음.  -->
+    <b>disabled</b> : 비활성화 <br>
+    <button disabled>확인</button>
+    <button>취소</button>
+    <br>
+<br>
+<hr>
+<br>    
+    <!-- 글자수 제한 -->
+    <b>maxlength</b> : 글자수 제한 (input type : | text maxlength : 8) <br>
+    <input type="text" maxlength="8"> <br>
+<br>
+<hr>
+<br>
+    <!-- 체크박스를 이름 전에 나오게 하기 -->
+    <b>fieldset</b> 이용하여 <b>checkbox</b>가 선택지 앞에 나오게 하기 <br>
+    <form action="#">
+        <fieldset>
+            <legend>좋아하는 과일</legend>
+            <input type="checkbox" id="apple" value="apple" checked>
+            <label for="apple">apple</label><br>
+            <input type="checkbox" id="banana" value="banana">
+            <label for="banana">banana</label><br>
+            <input type="checkbox" id="orange" value="orange">
+            <label for="orange">orange</label><br>
+        </fieldset>
+    </form>
+
+<br>
+<hr>
+<br>
+    <!-- placeholder : 입력 양식에 값 입력에 대한 힌트를 줄 때 사용 -->
+    <b>placeholder</b> : 입력 양식에 값 입력에 대한 힌트를 줄 때 사용 <br>
+    <input type="tel" placeholder="전화번호 입력시 -은 제외"><br>
+    <input type="text" placeholder="이름을 입력하세요"><br>
+
+<br>
+<hr>
+<br>
+    <!-- required : 필수 입력 요소임을 의미 -->
+    <b>required</b> : 필수 입력 요소임을 의미 <br>
+    <form action="#">
+        <fieldset>
+            <legend>회원 가입</legend>
+            <label for="name">이름</label>
+            <input type="text" id="name" required>
+            <br>
+            <label for="tel">전화번호</label>
+            <input type="tel" id="tel" required>
+            <br>
+            <button type="submit">제출</button>
+    </fieldset>
+    </form>
+
+</body>
+</html>
+
