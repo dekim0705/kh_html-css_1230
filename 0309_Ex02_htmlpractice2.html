@@ -1,0 +1,130 @@
+<!-- 2023/03/08 수요일 HTML&CSS Day2 -->
+<!-- 2023/03/09 목요일 HTML&CSS Day3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>연습문제 2번</title>
+</head>
+<body>
+     <style>
+        label {
+            margin-left: 30px;
+            width: 50px;
+            display: inline-block;
+        }
+    </style>
+<fieldset>
+    <h2><b>프런트엔드 개발자 지원서</b></h2>
+    <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+    <hr>
+    <form action="">
+        <p><b>개인정보</b></p>
+        <div>
+            <label for="username">이 름 </label>
+            <input type="text" id="username" placeholder="공백없이 입력하세요">
+        </div>
+        <div>
+            <label for="userphone">연락처</label>
+            <input type="number" id="userphone">
+        </div>
+        <style>
+            input{
+                margin-left: 30px;
+            }
+            label {
+                width: 90px;
+                display:inline-block
+            }
+        </style>
+        <p><b>지원 분야</b></p>
+        <input type="radio" name="webpub">
+        <label for="webpub">웹퍼블리싱</label>
+        <br>
+        <input type="radio" name="webappdev">
+        <label for="webappdev">웹 프론트엔드</label>
+        <br>
+        <input type="radio" name="webimprove">
+        <label for="webimprove">모바일 앱</label>
+
+        <br>
+        <p><b>지원동기</b></p>
+        <div>
+            <label for="desc"></label>
+            <textarea name="" id="desc" cols="50" rows="5"></textarea>
+        </div>
+        <button type="button">접수하기</button>
+        <button type="button">다시쓰기</button>
+    </form>
+</fieldset>
+
+</body>
+</html>
+
+
+
+<!-- 연습문제 2 강사님 예제
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제2</title>
+
+    <style>
+        .container {
+            width: 560px;
+            border: 1px solid black;
+            padding: 20px 40px; /* 위, 아래 20, 양옆 40*/
+            /* text-align: center; 중간정렬*/
+        }
+        .detail {
+            margin: 4px 40px;
+        }
+        /* label {
+            width: 50px;
+            display: inline-block;
+        } */
+
+    </style>
+</head>
+<body>
+        <div class = "container">
+            <h1>프론트앤드 개발자 지원서</h1>
+            <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다. </p>
+            <hr>
+            <form action="#">
+            <h4>개인정보</h4>
+                <div class="detail">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" placeholder="☆공백 없이 입력 하세요☆">
+                </div>
+                <div class="detail">
+                    <label for="tel">연락처</label>
+                    <input type="tel" id="tel">
+                </div>
+
+                <h4>지원분야</h4>
+                <div class="detail">
+                    <input type="radio" id="publish" name="field" value="1">
+                    <label for="publish">웹퍼블리싱</label>
+                </div>
+                <div class="detail">
+                    <input type="radio" id="front" name="field" value="2">
+                    <label for="front">프론트앤드</label>
+                </div>
+                <div class="detail">
+                    <input type="radio" id="mobile" name="field" value="3">
+                    <label for="mobile">모바일 앱</label>
+                </div>
+
+                <h4>지원동기</h4>
+                <textarea name="desc" id="" cols="70" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요.">
+                </textarea>
+                <button type="submit">접수하기</button>
+                <button type="submit">다시쓰기</button>
+            </form>
+        </div>
+</body>
+</html> -->

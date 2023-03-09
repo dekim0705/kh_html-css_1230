@@ -1,0 +1,43 @@
+<!-- 2023/03/08 수요일 HTML&CSS Day2 -->
+<!-- 2023/03/09 목요일 HTML&CSS Day3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>연습문제(1번)</title>
+<!--가로폭 width | margin-bottom 아래폭
+    inline 요소 : 자기 컨텐츠 크기만큼만 공간이 잡힘 
+    inline-block : inline이지만 크기만큼 잡는다는 뜻
+    잡힌 크기 확인을 하기 위해서 배경색 넣어 보기 -->
+    <style>
+        label {
+            width: 60px;
+            display: inline-block;
+            background-color: aquamarine;
+        }
+        div {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>예약 정보</h1>
+    <form action="">
+        <div>
+            <label for="name">이 름 </label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div>
+            <label for="phone">휴대폰</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div>
+            <label for="mail">이메일</label>
+            <input type="email" id="mail" name="mail">
+        </div>
+        <input type="submit" value="예약하기">
+
+    </form>
+    
+</body>
+</html>
