@@ -1,0 +1,232 @@
+<!-- 2023/03/08 수요일 HTML&CSS Day2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Day2</title>
+</head>
+<body>
+    <h1>[HTML&CSS] Day2 2023/03/08 수요일 </h1>
+<br>
+    <h1>레드향</h1>
+    <p>껍질에 붉은 빛이 돌아 <b>레드향</b>이라 불린다. </p>
+    <p>레드향은 <em>한라봉과 귤을 교배</em>한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+    <p><i>비타민 C</i>와 <i>비타민 P</i>가 풍부해<br> <strong>혈액순환, 감기예방</strong> 등에 좋은 것으로 알려져 있다.</ㅔ>
+
+        <br>
+        <br>
+        
+
+    <!-- <br> 줄바꿈-->
+    <!-- <hr> 라인 -->
+    <p>
+        줄을 나누고 싶어서<br/>
+        이렇게 줄을 나눠봤습니다.<br/>
+        <hr>
+        과연    그대로  출력이  될까요? 
+    </p>
+
+    <br>
+    <hr>
+    <br>
+    
+
+    <!-- ins태그 : 새로 추가된 텍스트 -->
+    <!-- del태그 : 기존에 있는 텍스트가 삭제된 텍스트-->
+    <p>세일 기간을 맞이하여 온라인 수강권을 할인된금액
+        (정가<del>36,000원</del><ins>20,000원</ins>)에 판매 합니다.</p>
+
+<br>
+<hr>
+<br>
+
+    <style>
+        .movie {
+            background-color: blueviolet;
+            font-size: 20px;
+            color: beige;
+        }
+        .tv {
+            background-color: blue;
+            font-size: 30px;
+            color: azure;
+        }
+    </style>
+    <div class="movie">
+        <p>영화 소개</p>
+        <p>영화를 소개하는 페이지입니다.</p>
+      </div>
+      <div class="tv">
+        <p>TV 프로그램 소개</p>
+        <p>TV 프로그램을 소개하는 페이지입니다.</p>
+      </div>
+
+    <!-- <div class="music"> style 바로 넣는법 (?) -->
+    <div style="background-color:lightgray; color:green; font-size: 20px; text-align:center">
+        <p>음악 소개</p>
+        <p>음악을 소개하는 페이지 입니다. </p>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    
+        <p style="background-color: royalblue; color:white;">저는 블록 요소 입니다.</p>
+        <span style="background-color: pink;">저는 인라인 요소 입니다. </span>
+    
+
+    <br>
+    <br>
+        
+    
+    <div class="movie">
+            <p>영화 소개</p>
+            <p><span style="font-style: italic; font-weight: bold;">영화</span>를 소개하는 페이지입니다.</p>
+    </div>
+
+   
+    <br>
+    <hr>
+    <br>
+
+    
+    <!-- list <ul> : bullet points <ol> : numbering -->
+        <h1>판매 중인 과일</h1>
+        <b>ul</b> : bullet points <br>
+    <ul>
+        <li>사과</li>
+        <li>멜론</li>
+        <li>바나나</li>
+    </ul>
+    <b>ol</b> : numbering <br>
+    <ol>
+        <li>사과</li>
+        <li>멜론</li>
+        <li>바나나</li>
+    </ol>
+
+    <br>
+    <hr>
+    <br>
+
+<h2>레드향 샐러드 레시피</h2>
+<P><span style = "color: greenyellow; font-weight: bold;">재료</span> : 레드향 1개, 아보카도 1개, 토마토 1개, 샐러드 채소 30g</P>
+<p><span style = "color: yellowgreen; font-weight: bold;">드레싱</span> : 올리브유 1큰술, 레몬즙 2큰술, 꿀 1큰술, 소금 약간</p>
+<ol>
+    <li>샐러드 채소를 씻고 물기를 제거한 후 준비합니다.</li>
+    <li>레드향과 아보카도, 토마토를 먹기 좋은 크기로 썰어둡니다.</li>
+    <li>드레싱 제료를 믹서에 갈아줍니다.</li>
+    <li>볼에 샐러드 채소와 썰어 둔 레드향, 아보카도, 토마토를 넣고 드레싱을 뿌리면 끝! </li>
+</ol>
+
+    <br>
+    <hr>
+    <br>
+
+    <b>dl태그 </b>: 사전처럼 용어를 설명하는 Definition List(정의 목록)
+    <dl>
+        <dt>dt</dt>
+        <dd>Definition Term</dd>
+        <dt>dd</dt>
+        <dd>Definition Description</dd>
+      </dl>  
+
+      <br>
+      <hr>
+      <br>
+
+<!-- a tag -->
+      <b>a tag</b> : 하이퍼링크 <br>
+    <h2>
+      <a href="http://google.co.kr" target="_self">구글로 이동_self 현재창에서 열기</a><br>
+      <a href="http://google.co.kr" target="_blank">구글로 이동_blank 새창에서 열기</a>
+    </h2>
+    
+    <hr>
+    <b>a tag</b>에 이미지 넣기 <br>
+    <style> 
+        img {
+            width: 320;
+            height: 320;
+            border: 3px solid black;
+        }
+    </style>
+    <a href="https://www.google.com" target = "_blank">
+    <img src="./images/punchbear.png"height="200px" alt="구글로가요">
+    </a>
+    곰돌이 클릭하면 구글로 이동해요
+    <br>
+    <img src="./images/tiredbear.png"height="200px" alt="이미지가 없어요ㅠㅠ없다!!">
+
+
+    <br>
+    <hr>
+    <br>
+
+
+    <!-- 테이블 만들기 -->
+    <b>테이블 Ex</b> <br><br>
+    <style>
+        /* 테이블의 경계선을 하나로 병합해서 표시 */
+        table {
+            border-collapse: collaspe;
+        }
+        th, td{
+            border: 1px solid black;
+        }
+        th {
+            background-color: orange;
+        }
+        td {
+            background-color: yellow;
+            color: brown;
+        }
+    </style>
+
+    <table>
+        <caption>상품 정보 테이블</caption>
+        <thead>
+        <tr>
+            <th>번호</th>
+            <th>상품명</th>
+            <th>수량</th>
+            <th>가격</th>
+        </tr>
+    </thead>
+    <tbody>    
+        <tr>
+            <td>1</td>
+            <td>콜라</td>
+            <td>1</td>
+            <td rowspan="3">1,500</td>
+            <!-- <td>1,500</td> -->
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>사이다</td>
+            <td>1</td>
+            <!-- <td>1,500</td> -->
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>탄산수</td>
+            <td>1</td>
+            <!-- <td>1,500</td> -->
+        </tr>
+
+    </tbody>
+    <tfoot>
+        <td>총 금액</td>
+        <td colspan="3">4,500</td>
+    </tfoot>
+
+<!-- thead, tbody, tfoot  -->
+
+    </table>
+<p><b>rowspan</b>사용하여 테이블 열, 행 병합 가능</p>
+<p>Keep in mind → thead, tbody, tfoot</p>
+
+</body>
+</html>
