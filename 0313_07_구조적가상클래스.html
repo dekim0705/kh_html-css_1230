@@ -1,0 +1,42 @@
+<!-- 2023/03/13 월요일 HTML&CSS Day4 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 구조적 가상 클래스 선택자 : 요소의 구조와 위치에 따라 스타일을 적용 */
+        li:first-child {
+            color: red;
+            font-weight: bold;
+        }
+        li:last-child {
+            color: green;
+            font-weight: bold;
+        }
+        /* 요소의 n번째 자식 요소를 선택 */
+        p:nth-child(2) {
+            color: red;
+        }
+    </style>
+</head>
+<body> 
+    <!-- <ul>
+        <li>list 태그 1번</li>
+        <li>list 태그 2번</li>
+        <li>list 태그 3번</li>
+        <li>list 태그 4번</li>
+        <li>list 태그 5번</li>  
+    </ul>
+
+    <br><hr><br> -->
+
+    <p>p 태그 1번</p>
+    <p>p 태그 2번</p>
+    <div>
+        <p>p 태그 3번</p>
+        <p>p 태그 4번</p>
+    </div>    
+    <p>p 태그 5번</p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!-- 2023/03/13 월요일 HTML&CSS Day4 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    /* 인접 형제 선택자 : + 기호를 사용하여 인접한 형제 요소를 선택하는 방법,
+                        지정된 요소의 바로 다음 형제 요소만 선택 */
+    /* h1 + h2 {
+        color: red;
+    } */
+    p + span {
+        color: royalblue;
+        font-weight: bolder;
+    }
+    /* 일반 형제 선택자 : ~ 를 사용하여 이전 선택자 뒤에 오는 
+                        형제 관계 요소를 모두 선택자로 지정 */
+    h1 ~ h3 {
+        background-color: yellow;
+        color: black;
+    }
+    /* 가상 요소 선택자 : 요소의 특정 부분에 스타일을 적용 하는 방법 */
+    /* ::before, ::after, ::first-letter, ::first-line */
+    h1::before {
+        content: "★";
+        color: red;
+    }
+    h1::after {
+        content: "★";
+        color: red;
+    }
+</style>
+<body>
+    <h1>h1 태그 입니다.</h1>
+    <h2>h2 태그 입니다.</h2>
+    <h3>h3 태그 입니다.</h3>
+    <p>안녕하세요.</p>
+    오늘은 <span>월요일</span>! 
+    <p>한 주의 시작 입니다.ㅠㅠ!</p>
+    <h3>h3 태그 입니다.</h3>
+</body>
+</html>
