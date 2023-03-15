@@ -1,0 +1,40 @@
+<!-- 2023/03/14 화요일 HTML&CSS Day5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>위치 속성으로 HTML 요소 배치하기</title>
+    <style>
+        body {
+            margin: 0;
+            height: 4000px;
+            position: relative;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+        .red-box {
+            background-color: red;
+        }
+        .green-box {
+            background-color: green;
+            position: sticky;
+            /* absolute: 부모요소 기준으로 절대값 만큼 움직이고, 부모요소는 static이 아니어야 함 */
+            /* fixed: 뷰포트 기준으로 고정된 위치 */
+            /* sticky: 화면의 정해진 곳에서 움직이지 않도록 */
+            top: 10px;
+        }
+        .blue-box {
+            background-color: blue;
+        }
+   
+    
+    </style>
+</head>
+<body>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+</body>
+</html>
